@@ -1,0 +1,14 @@
+# Default config. Qwen2.5-1.5B-Instruct is the smallest model observed to
+# reliably follow the custom ```action tool-call protocol (see
+# configs/model/qwen2.5-0.5b-4bit.yaml for why 0.5B does not, at least
+# before any fine-tuning). Scale up further with
+# configs/model/qwen2.5-3b-4bit.yaml for a stronger capability demo.
+data_dir: data
+model:
+  path: mlx-community/Qwen2.5-1.5B-Instruct-4bit
+  adapter_path: null
+  max_tokens: 512
+  temp: 0.2
+task:
+  task_set: coding_katas
+  max_turns: 10

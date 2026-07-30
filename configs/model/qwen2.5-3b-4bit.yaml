@@ -1,0 +1,5 @@
+# Override file: merge on top of configs/base.yaml for the real demo-sized
+# model, once the pipeline has been proven end-to-end on the 0.5B default.
+# Usage: autopoietic run-tasks --config configs/base.yaml --config configs/model/qwen2.5-3b-4bit.yaml
+model:
+  path: mlx-community/Qwen2.5-3B-Instruct-4bit

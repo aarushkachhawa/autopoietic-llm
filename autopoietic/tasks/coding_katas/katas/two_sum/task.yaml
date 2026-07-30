@@ -1,0 +1,8 @@
+id: two_sum
+difficulty: medium
+tags: [arrays, hashing]
+prompt: |
+  Write a function `two_sum(nums: list[int], target: int) -> list[int]` in
+  solution.py that returns the indices of the two numbers in `nums` that
+  add up to `target`. Assume exactly one valid solution exists, and you may
+  not use the same element twice. Return the indices in ascending order.

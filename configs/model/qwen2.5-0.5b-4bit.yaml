@@ -1,0 +1,11 @@
+# Known finding (M0 smoke test, 2026-07-29): Qwen2.5-0.5B-Instruct ignores
+# the custom ```action tool-call protocol entirely - it always answers with
+# a plain ```python code block instead, and never calls submit, so every
+# episode times out at max_turns with score 0.0. This is exactly the kind
+# of gap the fine-tuning flywheel is meant to close (teach a tiny model to
+# reliably follow the harness's protocol via SFT on successful trajectories
+# from a stronger model/base). Useful as a regression/stress config once
+# LoRA training (M2+) is in place - not currently usable standalone.
+# Usage: autopoietic run-tasks --config configs/base.yaml --config configs/model/qwen2.5-0.5b-4bit.yaml
+model:
+  path: mlx-community/Qwen2.5-0.5B-Instruct-4bit

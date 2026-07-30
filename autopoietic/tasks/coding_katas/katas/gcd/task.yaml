@@ -1,0 +1,6 @@
+id: gcd
+difficulty: easy
+tags: [math]
+prompt: |
+  Write a function `gcd(a: int, b: int) -> int` in solution.py that returns
+  the greatest common divisor of two non-negative integers `a` and `b`.

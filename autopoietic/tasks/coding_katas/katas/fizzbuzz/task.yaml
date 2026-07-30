@@ -1,0 +1,11 @@
+id: fizzbuzz
+difficulty: easy
+tags: [basics]
+prompt: |
+  Write a function `fizzbuzz(n: int) -> list[str]` in solution.py.
+
+  It returns a list of strings for the numbers 1..n inclusive, where:
+  - if the number is divisible by 3 and 5, the string is "FizzBuzz"
+  - if divisible by 3 only, the string is "Fizz"
+  - if divisible by 5 only, the string is "Buzz"
+  - otherwise, the string is str(number)

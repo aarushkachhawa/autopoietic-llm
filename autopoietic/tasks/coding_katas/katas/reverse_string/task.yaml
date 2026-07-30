@@ -1,0 +1,6 @@
+id: reverse_string
+difficulty: easy
+tags: [basics, strings]
+prompt: |
+  Write a function `reverse_string(s: str) -> str` in solution.py that
+  returns the input string reversed.

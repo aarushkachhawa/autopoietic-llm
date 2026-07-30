@@ -1,0 +1,8 @@
+id: is_palindrome
+difficulty: easy
+tags: [basics, strings]
+prompt: |
+  Write a function `is_palindrome(s: str) -> bool` in solution.py that
+  returns True if `s` reads the same forwards and backwards, ignoring case
+  and non-alphanumeric characters (e.g. "A man, a plan, a canal: Panama" is
+  a palindrome), otherwise False.

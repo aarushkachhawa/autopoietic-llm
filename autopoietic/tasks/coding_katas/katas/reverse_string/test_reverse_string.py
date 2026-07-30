@@ -1,0 +1,13 @@
+from solution import reverse_string
+
+
+def test_basic():
+    assert reverse_string("hello") == "olleh"
+
+
+def test_empty():
+    assert reverse_string("") == ""
+
+
+def test_palindrome_input():
+    assert reverse_string("level") == "level"
